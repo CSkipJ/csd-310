@@ -1,0 +1,38 @@
+NoSQL Data Structures:
+{
+	"first_name": "John"
+	"last_name": "Smith"
+	"Roles": [
+		{
+			"role_name": "employee"
+			"department": "Skip_Co"
+		}
+		{
+			"role_name": "data_analyst"
+			"department": "research_and_analysis"
+		}
+		{
+			"role_name": "safety_manager"
+			"department": "human_resources"
+		}
+	]
+	"Birthdate": 19850621
+	"Dependents": [
+		{
+			"first_name": "Sandra"
+			"last_name": "Smith
+			"relation": "wife"
+		}
+		{
+			"first_name": "Jake"
+			"last_name": "Smith"
+			"relation": "son"
+		}
+		{
+			"first_name": "Lilly"
+			"last_name": "Smith"
+			"relation": "daughter"
+		}
+	]
+}
+
