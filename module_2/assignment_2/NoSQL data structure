@@ -1,0 +1,39 @@
+NoSQL Data Structures:
+// customer document
+{
+	_id: "cust001"
+	first_name: "ashley"
+	last_name: "jones"
+	date_of_birth: "20000606"
+	user_name: "ashdash00"
+	invoices: [
+		{
+			_id: "inv001"
+			date_created: "20230616"
+			date_shipped: "20230618"
+			subtotal: 2359
+			line_items: [
+				{
+					_id: itm001
+					name: plumbus
+					price: 2359
+					quantity: 1
+				}
+			]
+		}
+		{
+			_id: "inv002"
+			date_created: "20230614"
+			date_shipped: "20230616"
+			subtotal: 10050
+			line_items: [
+				{
+					_id: itm002
+					name: unum_machine
+					price: 5025
+					quantity: 2
+				}
+			]
+		}
+	]
+}
