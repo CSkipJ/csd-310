@@ -1,0 +1,73 @@
+NoSQL Data Structure
+
+//user document
+{
+	user_id: 1111
+	first_name: "Adam"
+	last_name: "Jones"
+}
+{
+	user_id: 1112
+	first_name: "Martin"
+	last_name: "Thompson"
+}
+
+//link_user_role document
+{
+	link_user_role_id: 2221
+	user_id: 1111
+	roles: [
+		role_id: 3331
+		role_id: 3332
+	]
+}
+{
+	link_user_role_id: 2222
+	user_id: 1112
+	roles: [
+		role_id: 3332
+	]
+}
+
+//role document
+{
+	role_id: 3331
+	role_name: "Admin"
+}
+{
+	role_id: 3332
+	role_name: "User"
+}
+
+//link_role_permissions document
+{
+	link_role_permissions_id: 4441
+	role_id: 3331
+	permissions: [
+		permission_id: 5551
+		permission_id: 5552
+		permission_id: 5553
+	]
+}
+{
+	link_role_permissions_id: 4442
+	role_id: 3332
+	permissions: [
+		permission_id: 5551
+		permission_id: 5552
+	]
+}
+
+//permissions document
+{
+	permission_id: 5551
+	permission_name: "read"
+}
+{
+	permission_id: 5552
+	permission_name: "write"
+}
+{
+	permission_id: 5553
+	permission_name: "delete"
+}

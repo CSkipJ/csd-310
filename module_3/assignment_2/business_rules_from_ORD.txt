@@ -1,0 +1,20 @@
+//With intermediary tables
+A USER has one LINK_USER_ROLE
+A LINK_USER_ROLE has more than one USER
+
+A LINK_USER_ROLE has more than one ROLE
+A ROLE has one LINK_USER_ROLE
+
+A ROLE has one LINK_ROLE_PERMISSION
+A LINK_ROLE_PERMISSION has more than one ROLE
+
+A LINK_ROLE_PERMISSION has more than one PERMISSION
+A PERMISSION has one LINK_ROLE_PERMISSION
+
+
+//Without intermediary tables
+A USER has one or more than one ROLE
+A ROLE has one or more than one USER
+
+A ROLE has one or more than one PERMISSION
+A PERMISSION has one or more than one ROLE
