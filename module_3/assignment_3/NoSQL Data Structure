@@ -1,0 +1,19 @@
+//NoSQL Data Structure
+
+//book document
+{
+	isbn: "978-1-1234567-1-9"
+	book_name: "Stopping Recursive Thoughts"
+	book_price: 49.99
+	publisher: {
+		pub_name: "Book Skipper"
+		pub_code: 11002303450
+		address: "123 Book Lane"
+	}
+	author: {
+		first_name: "Daniel"
+		last_name: "Tiger"
+		phone: "555-123-4567"
+		email: "daniel.tiger@bookskipper.com"
+	}
+}
