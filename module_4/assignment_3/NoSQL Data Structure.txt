@@ -1,0 +1,49 @@
+NoSQL Data Structure
+// student document
+{
+	student_id: 123456789
+	first_name: "Jonathon"
+	last_name: "Douglas"
+	enrollments: [
+		{
+			term: "fall_2021"
+			gpa: 3.7
+			start_date: 20210816
+			end_date: 20211218
+			classes: [
+				{
+					course_id: MATH240
+					description: "Differential Equations"
+					instructor: "John Hancock"
+					grade: 95
+				}
+				{
+					course_id: ENG150
+					description: "Chaucer"
+					instructor: "Bethany Greenwhich"
+					grade: 90
+				}
+			]
+		}
+		{
+			term: "spring_2022"
+			gpa: 3.7
+			start_date: 20230106
+			end_date: 20230518
+			classes: [
+				{
+					course_id: ENG210
+					description: "Canterbury Tales"
+					instructor: "John Adams"
+					grade: 92
+				}
+				{
+					course_id: COMP250
+					description: "C++"
+					instructor: "John Goodenough"
+					grade: 95
+				}
+			]
+		}
+	]
+}
