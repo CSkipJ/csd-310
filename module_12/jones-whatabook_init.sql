@@ -5,14 +5,19 @@
     Description: whatabook database initialization script for final project.
 */
 
+DROP DATABASE IF EXISTS whatabook;
+CREATE DATABASE IF NOT EXISTS whatabook;
 
-CREATE DATABASE whatabook1;
-
-USE whatabook1;
+USE whatabook;
 
 DROP USER IF EXISTS 'whatabook_user'@'localhost';
 CREATE USER 'whatabook_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL8IsGreat!';
-GRANT ALL PRIVILEGES ON whatabook1.* TO 'whatabook_user'@'localhost';
+GRANT ALL PRIVILEGES ON whatabook.* TO 'whatabook_user'@'localhost';
+
+-- drop contstraints if they exist
+ALTER TABLE wishlist DROP FOREIGN KEY fk_book;
+ALTER TABLE wishlist DROP FOREIGN KEY fk_user;
+
 
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS book;
